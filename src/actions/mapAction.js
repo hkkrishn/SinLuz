@@ -1,4 +1,5 @@
 import { MAP_DETAIL } from "./types";
+import axios from 'axios';
 
 const mapDetails = [
   {
@@ -58,6 +59,10 @@ const mapDetails = [
     ]
   }
 ];
-export const getMapDetails = () => dispatch => {
-  return dispatch({ type: MAP_DETAIL, payload: mapDetails });
+export const getMapDetails = () => async dispatch => {
+  const res = await axios.get('https://lucero.herokuapp.com/lugar');
+  const smallres = res.data.data.slice(0,100)
+  console.log(smallres)
+  return dispatch({ type: MAP_DETAIL, payload: smallres });
 };
+
