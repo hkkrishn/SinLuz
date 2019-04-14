@@ -7,7 +7,15 @@
     &__wrapper {
         padding: 0 20px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            width: 100px;
+            height: 50px;
+            background: url(../assets/logo.PNG) center no-repeat;
+            background-size: contain;
+        }
 
         .serchbar {
             padding: 10px;
