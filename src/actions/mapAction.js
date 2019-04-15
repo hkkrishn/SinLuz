@@ -60,7 +60,7 @@ const mapDetails = [
   }
 ];
 export const getMapDetails = () => async dispatch => {
-  const res = await axios.get('https://lucero.herokuapp.com/apagon');
+  const res = await axios.get('https://lucero.herokuapp.com/lugar');
   const smallres = res.data.data.slice(0,13)
   console.log(smallres)
   return dispatch({ type: MAP_DETAIL, payload: smallres });
