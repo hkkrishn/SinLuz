@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { GoogleComponent } from "react-google-location";
-const API_KEY = "AIzaSyDzbphusfigdQaMcGNj8-lzpud6WvVHzyM";
+const API_KEY = "AIzaSyAYInuljKoDdqVRC0Z72RWetUrfDMJLZog";
 
 class Navigation extends Component {
     constructor(props) {
