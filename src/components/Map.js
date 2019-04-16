@@ -11,7 +11,7 @@ class Map extends Component {
   }
   renderMap = () => {
     loadScript(
-      "https://maps.googleapis.com/maps/api/js?key=AIzaSyCvdgUHoWt0MgqmWmcw-IcMAXMvRLWxcpE&callback=initMap"
+      "https://maps.googleapis.com/maps/api/js?key=AIzaSyAYInuljKoDdqVRC0Z72RWetUrfDMJLZog&callback=initMap"
     );
     loadScriptAgain(
       "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"
