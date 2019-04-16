@@ -41,8 +41,7 @@ class PostList extends Component {
                 <h2>{post.location.coordinates}</h2>
             </div>
         );
-      })
-              
+      })    
             }
           </div>
         </div>

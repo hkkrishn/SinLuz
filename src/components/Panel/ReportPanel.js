@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { postReport } from "../../actions";
 import { connect } from "react-redux";
 import { GoogleComponent } from "react-google-location";
-const API_KEY = "AIzaSyCvdgUHoWt0MgqmWmcw-IcMAXMvRLWxcpE";
+const API_KEY = "AIzaSyAYInuljKoDdqVRC0Z72RWetUrfDMJLZog";
 
 class ReportAction extends Component {
   state = {
