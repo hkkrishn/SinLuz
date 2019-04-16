@@ -31,16 +31,18 @@ class Map extends Component {
     });
     var arr = this.props.mapInfo;
     console.log(arr)
-    
+    var markarr = []
     if(this.props.mapInfo.length !== undefined){
       var markers = this.props.mapInfo.map(function(loc, i) {
         
-        console.log(loc)
+        console.log(loc.location.coordinates)
         
-        return new window.google.maps.Marker({
+        
+        var mark = new window.google.maps.Marker({
           position: {lat:loc.location.coordinates[1],lng:loc.location.coordinates[0]},
           label: i
         });
+        markarr.push(mark)
       });
     }
     // var locations = [
@@ -85,7 +87,7 @@ class Map extends Component {
     //   });
     // });
     // Add a marker clusterer to manage the markers.
-    var markerCluster = new window.MarkerClusterer(map, markers, {
+    var markerCluster = new window.MarkerClusterer(map, markarr, {
       imagePath:
         "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m"
     });
